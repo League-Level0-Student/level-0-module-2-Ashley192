@@ -17,7 +17,7 @@ public class AnimalFarm {
 	 * If you are not sure, ask your teacher 
 	 * *****************/
 	boolean canPlaySounds = true;
-
+	String cow=JOptionPane.showInputDialog("What animal do you want?");
 	
 	public static void main(String[] args) {
 		new AnimalFarm().animals();
@@ -26,34 +26,46 @@ public class AnimalFarm {
 	void animals() {
 
 		/* 1. Ask the user which animal they want, then see and hear 
-		 *    the animal they chose using one of the methods below.
+		 *    the animal they chose using one of the methods below.'
+		 *    
 		*/			 
 			
 		/* 2. Make it so that the user can keep entering new animals. */
-
+			
+			
 	}
 
-	void moo() {
+	
+		void moo() {
+		
+
+		if (cow.equals("cow")) {
+			
 		playNoise(mooFile);
 		showImage(cowIcon);
+		}
 	}
-
 	void quack() {
+
+		if (cow.equals("duck")) {
 		playNoise(quackFile);
 		showImage(duckIcon);
+		}
 	}
 
 	void woof() {
+		if (cow.equals(wolf)) 
 		playNoise(woofFile);
 		showImage(dogIcon);
 	}
 	
-	void meow() {
+	void meow() {	
+		if (cow.equals(cat)) 
 		playNoise(meowFile);
 		showImage(catIcon);
 	}
-	
 	void llamaScream() {
+		if(cow.equals(llama))
 		playNoise(llamaFile);
 		showImage(llamaIcon);
 	}
