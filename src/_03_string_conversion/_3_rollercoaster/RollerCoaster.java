@@ -3,7 +3,7 @@ package _03_string_conversion._3_rollercoaster;
 import javax.swing.JOptionPane;
 
 public class RollerCoaster {
-
+public 
 	// 1) Make a main method that includes all the steps below…. 
 		
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide
