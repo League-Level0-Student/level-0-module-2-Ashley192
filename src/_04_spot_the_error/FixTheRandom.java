@@ -13,6 +13,8 @@ public class FixTheRandom {
 		Random random = new Random();
 		
 		int numnber = random.nextInt(5);
+		numnber = random.nextInt(6) + 5;
+		System.out.println(numnber);
 		
 		if (numnber == 5) {
 			System.out.println("FIVE");
