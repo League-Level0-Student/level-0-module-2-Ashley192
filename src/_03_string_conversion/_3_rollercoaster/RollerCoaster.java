@@ -17,12 +17,14 @@ public static void main(String[]args) {
 		
 		// 3) Convert heightToRide to heightAsInt using Integer.parseInt();  Hint: int heightAsInt = Integer.parse... 
 	int heightAsInt=Integer.parseInt(heightToRide);{
-	if (heightAsInt>= 42){
-			JOptionPane.showInputDialog("You are tall enough to ride the coaster with someone!");
-	}
+	
+	
 			if (heightAsInt>= 48){
 JOptionPane.showInputDialog("Hurray! you can ride the coaster alone!");
+
 			}
+			if (heightAsInt>= 42 && heightAsInt<48){
+				JOptionPane.showInputDialog("You are tall enough to ride the coaster with someone!");
 	 if(heightAsInt<42) {
 		JOptionPane.showInputDialog("You must be at least 42 inches tall to ride the roller coaster pal!");
 	}
@@ -33,4 +35,4 @@ JOptionPane.showInputDialog("Hurray! you can ride the coaster alone!");
 	
 		// 6) else print: "You must be at least 42 inches tall to ride the roller coaster pal!"
 }
-}}
+}}}
