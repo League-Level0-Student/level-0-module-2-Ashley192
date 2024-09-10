@@ -10,11 +10,16 @@ public class SoundtrackToLife {
 
 		// 1. Adjust this pop-up to find out what mood the user is in.
 		String userMood = JOptionPane.showInputDialog(null,"What mood are you?");
-		if (userMood=="stressed") {
+		if (userMood.equals("stressed")) {
 			playVideo("http://bit.ly/video-for-happy");
 		}
-				}
-				
+		if (userMood.equals("sad")) {
+			playVideo("http://bit.ly/video-for-sad");
+		}
+		if (userMood==("angry")) {
+			playVideo("http://bit.ly/video-for-angry");
+					}
+	}
 				
 		
 
